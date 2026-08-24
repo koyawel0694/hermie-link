@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>John · automated Facebook pages</title>
+  <meta name="description" content="I run a Facebook bot farm on my own server: posts go out on schedule 24/7, photos get edited automatically, and a watchdog keeps everything alive. Want one for your pages? Get in touch." />
+  <meta name="theme-color" content="#0b0b10" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230b0b10'/%3E%3Ctext x='16' y='22' font-family='monospace' font-size='16' fill='%237dd8ff' text-anchor='middle'%3EJ%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <a class="skip" href="#offer">skip to contact</a>
+  <div class="orb orb-a" aria-hidden="true"></div>
+  <div class="orb orb-b" aria-hidden="true"></div>
+
+  <main class="col">
+
+    <!-- hero -->
+    <header class="hero">
+      <div class="avatar" aria-hidden="true">
+        <svg viewBox="0 0 96 96" role="img" aria-label="J monogram">
+          <defs>
+            <linearGradient id="av-g" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#8f6bff"/><stop offset="1" stop-color="#39d0ff"/>
+            </linearGradient>
+          </defs>
+          <rect x="2" y="2" width="92" height="92" rx="26" fill="#14141d" stroke="url(#av-g)" stroke-width="2"/>
+          <text x="48" y="63" text-anchor="middle" font-family="Inter, sans-serif" font-size="42" font-weight="800" fill="url(#av-g)">J</text>
+        </svg>
+      </div>
+
+      <h1>John</h1>
+      <p class="tagline">I run a Facebook bot farm out of a single server, and it never sleeps.</p>
+
+      <p class="chip" id="status">
+        <span class="dot" aria-hidden="true"></span>
+        <span id="status-text">checking the farm...</span>
+      </p>
+    </header>
+
+    <!-- intro -->
+    <section class="intro reveal">
+      <p>Pages post on schedule. Photos get edited before upload. Captions get written, topics get picked, and a watchdog restarts anything that dies, then messages me about it. All of it happens on a small server I own.</p>
+      <p>This page is the tour. If you want the same machine working for your own pages, keep scrolling.</p>
+    </section>
+
+    <!-- features -->
+    <section class="features reveal" aria-label="What the bot farm does">
+      <h2>What the farm does</h2>
+      <ul class="grid">
+        <li class="card">
+          <span class="ic ic-clock" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+          </span>
+          <h3>Posts 24/7 on schedule</h3>
+          <p>Every page has its own posting plan. Some queue the night before, some fire just in time. Nobody has to press publish.</p>
+        </li>
+        <li class="card">
+          <span class="ic ic-pen" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+          </span>
+          <h3>Writes its own captions</h3>
+          <p>Captions and hashtags come from an AI writer tuned per page, so each one keeps its own voice instead of sounding copied.</p>
+        </li>
+        <li class="card">
+          <span class="ic ic-photo" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="9" cy="9" r="2"/><path d="m21 15-4.5-4.5L7 20"/></svg>
+          </span>
+          <h3>Edits photos automatically</h3>
+          <p>Cropping, framing, text overlays. Each image is prepared by the pipeline, so posts go out clean without anyone opening an editor.</p>
+        </li>
+        <li class="card">
+          <span class="ic ic-radar" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 12 17 7"/><path d="M12 3a9 9 0 0 1 9 9" opacity=".5"/><path d="M12 7.5A4.5 4.5 0 0 1 16.5 12" opacity=".5"/></svg>
+          </span>
+          <h3>Chases what's trending</h3>
+          <p>The farm scrapes news and trend sources all day, then queues posts about what people are already talking about while it's still hot.</p>
+        </li>
+        <li class="card">
+          <span class="ic ic-layers" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 9 5-9 5-9-5Z"/><path d="m3 12 9 5 9-5"/><path d="m3 17 9 5 9-5"/></svg>
+          </span>
+          <h3>Runs many pages at once</h3>
+          <p>Ten pages live on one server with one brain. Each keeps its own niche, voice and calendar, and none of them wait on a human.</p>
+        </li>
+        <li class="card">
+          <span class="ic ic-shield" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5Z"/><path d="m9 12 2 2 4-4"/></svg>
+          </span>
+          <h3>Watches itself</h3>
+          <p>A watchdog checks the system every few minutes. If a job dies it gets restarted, and my phone gets a message about what happened.</p>
+        </li>
+      </ul>
+      <p class="live-note" id="live-note">Numbers below update straight from the server.</p>
+    </section>
+
+    <!-- tambay office, middle -->
+    <section class="office reveal" aria-label="The Tambay Office, live">
+      <h2>The office, live</h2>
+      <p class="office-copy">This is where the work actually happens, drawn as a pixel office. Every character is a real process running on the server right now. Click them.</p>
+      <div class="gb-frame">
+        <iframe
+          src="https://tambay-office.vercel.app/"
+          title="Tambay Office: live pixel view of the server"
+          loading="lazy"
+          allow="fullscreen"></iframe>
+      </div>
+      <div class="office-links">
+        <a class="ghost-btn" href="https://tambay-office.vercel.app/" target="_blank" rel="noopener">Open it full size</a>
+      </div>
+      <dl class="stats" id="stats">
+        <div><dt id="stat-bots">-</dt><dd>pages online now</dd></div>
+        <div><dt id="stat-jobs">-</dt><dd>scheduled jobs</dd></div>
+        <div><dt id="stat-up">-</dt><dd>hours uptime</dd></div>
+      </dl>
+    </section>
+
+    <!-- offer -->
+    <section class="offer reveal" id="offer">
+      <h2>Want your own?</h2>
+      <p>I set this whole thing up for other people's pages too. You bring the pages, I build the farm around them: the scheduler, the photo pipeline, the caption writer, the watchdogs and the alerts. You get a live view like the one above, and your pages keep posting whether you're awake or not.</p>
+      <p>No tech skills needed on your side. The first step is just a short conversation about what you want your pages to do. Email me and tell me what you're running.</p>
+      <div class="cta-row">
+        <a class="cta" href="mailto:daywithjohn@gmail.com?subject=I%20want%20my%20own%20Facebook%20bot%20farm">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m2 7 10 6L22 7"/></svg>
+          daywithjohn@gmail.com
+        </a>
+        <button class="ghost-btn" id="copy-email" type="button">Copy address</button>
+      </div>
+      <p class="cta-hint" id="copy-hint" hidden>Copied. Paste it wherever you email from.</p>
+    </section>
+
+    <footer class="foot">
+      <p>Built by hand &amp; automation.</p>
+      <p class="foot-links">
+        <a href="https://www.tiktok.com/@day.with.john" target="_blank" rel="noopener">TikTok</a>
+        <span aria-hidden="true">·</span>
+        <a href="https://github.com/gohilingjohn" target="_blank" rel="noopener">GitHub</a>
+      </p>
+      <p class="foot-year">&copy; <span id="year">2026</span> John</p>
+    </footer>
+
+  </main>
+
+  <script src="/main.js"></script>
+</body>
+</html>
